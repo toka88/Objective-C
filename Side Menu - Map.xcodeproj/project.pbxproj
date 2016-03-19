@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188921931C9971910046A16B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921921C9971910046A16B /* main.m */; };
+		188921961C9971910046A16B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921951C9971910046A16B /* AppDelegate.m */; };
+		1889219C1C9971910046A16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889219A1C9971910046A16B /* Main.storyboard */; };
+		1889219E1C9971910046A16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1889219D1C9971910046A16B /* Assets.xcassets */; };
+		188921A11C9971910046A16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889219F1C9971910046A16B /* LaunchScreen.storyboard */; };
+		188921AC1C9971910046A16B /* Side_Menu___MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921AB1C9971910046A16B /* Side_Menu___MapTests.m */; };
+		188921B71C9971910046A16B /* Side_Menu___MapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921B61C9971910046A16B /* Side_Menu___MapUITests.m */; };
+		188921C71C9972600046A16B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921C61C9972600046A16B /* SWRevealViewController.m */; };
+		188921DB1C99A96F0046A16B /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921DA1C99A96F0046A16B /* MenuTableViewController.m */; };
+		188921DE1C99AF020046A16B /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921DD1C99AF020046A16B /* FrontViewController.m */; };
+		18A0E7471C9C0CD400B937F8 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0E7461C9C0CD400B937F8 /* PushButtonView.m */; };
+		18DBCCA71C9A9EF8004223A5 /* backgroundPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCA61C9A9EF8004223A5 /* backgroundPic.jpg */; };
+		18DBCCB21C9AA151004223A5 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCA91C9AA151004223A5 /* backBtn.png */; };
+		18DBCCB31C9AA151004223A5 /* BigIcon_exclamation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */; };
+		18DBCCB41C9AA151004223A5 /* concept-icon-poster60.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAB1C9AA151004223A5 /* concept-icon-poster60.png */; };
+		18DBCCB51C9AA151004223A5 /* icon_1320_white60.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAC1C9AA151004223A5 /* icon_1320_white60.png */; };
+		18DBCCB61C9AA151004223A5 /* icon_back_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAD1C9AA151004223A5 /* icon_back_white.png */; };
+		18DBCCB71C9AA151004223A5 /* menu_icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAE1C9AA151004223A5 /* menu_icon (1).png */; };
+		18DBCCB81C9AA151004223A5 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAF1C9AA151004223A5 /* menu_icon.png */; };
+		18DBCCB91C9AA151004223A5 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCB01C9AA151004223A5 /* phone-icon.png */; };
+		18DBCCBA1C9AA151004223A5 /* topBar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCB11C9AA151004223A5 /* topBar.jpg */; };
+		18DBCCBE1C9AAA21004223A5 /* SideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBCCBD1C9AAA21004223A5 /* SideMenuCell.m */; };
+		18DBCCC71C9AC0C7004223A5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBCCC61C9AC0C6004223A5 /* MapViewController.m */; };
+		18DBCCCB1C9AE771004223A5 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBCCCA1C9AE771004223A5 /* ImageViewController.m */; };
+		18DBCCD01C9AEF08004223A5 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCC1C9AEF08004223A5 /* pic1.jpg */; };
+		18DBCCD11C9AEF08004223A5 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCD1C9AEF08004223A5 /* pic2.jpg */; };
+		18DBCCD21C9AEF08004223A5 /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCE1C9AEF08004223A5 /* pic3.jpg */; };
+		18DBCCD31C9AEF08004223A5 /* pic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCF1C9AEF08004223A5 /* pic4.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188921A81C9971910046A16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188921861C9971910046A16B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1889218D1C9971910046A16B;
+			remoteInfo = "Side Menu - Map";
+		};
+		188921B31C9971910046A16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188921861C9971910046A16B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1889218D1C9971910046A16B;
+			remoteInfo = "Side Menu - Map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1889218E1C9971910046A16B /* Side Menu - Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu - Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188921921C9971910046A16B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188921941C9971910046A16B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		188921951C9971910046A16B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1889219B1C9971910046A16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1889219D1C9971910046A16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188921A01C9971910046A16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188921A21C9971910046A16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188921A71C9971910046A16B /* Side Menu - MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side Menu - MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188921AB1C9971910046A16B /* Side_Menu___MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Side_Menu___MapTests.m"; sourceTree = "<group>"; };
+		188921AD1C9971910046A16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188921B21C9971910046A16B /* Side Menu - MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side Menu - MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		188921B61C9971910046A16B /* Side_Menu___MapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Side_Menu___MapUITests.m"; sourceTree = "<group>"; };
+		188921B81C9971910046A16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188921C51C9972600046A16B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		188921C61C9972600046A16B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		188921D91C99A96F0046A16B /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		188921DA1C99A96F0046A16B /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		188921DC1C99AF020046A16B /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
+		188921DD1C99AF020046A16B /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		18A0E7451C9C0CD400B937F8 /* PushButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButtonView.h; sourceTree = "<group>"; };
+		18A0E7461C9C0CD400B937F8 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
+		18DBCCA61C9A9EF8004223A5 /* backgroundPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundPic.jpg; sourceTree = "<group>"; };
+		18DBCCA91C9AA151004223A5 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BigIcon_exclamation.gif; sourceTree = "<group>"; };
+		18DBCCAB1C9AA151004223A5 /* concept-icon-poster60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "concept-icon-poster60.png"; sourceTree = "<group>"; };
+		18DBCCAC1C9AA151004223A5 /* icon_1320_white60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1320_white60.png; sourceTree = "<group>"; };
+		18DBCCAD1C9AA151004223A5 /* icon_back_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_white.png; sourceTree = "<group>"; };
+		18DBCCAE1C9AA151004223A5 /* menu_icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon (1).png"; sourceTree = "<group>"; };
+		18DBCCAF1C9AA151004223A5 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		18DBCCB01C9AA151004223A5 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
+		18DBCCB11C9AA151004223A5 /* topBar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = topBar.jpg; sourceTree = "<group>"; };
+		18DBCCBC1C9AAA21004223A5 /* SideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuCell.h; sourceTree = "<group>"; };
+		18DBCCBD1C9AAA21004223A5 /* SideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuCell.m; sourceTree = "<group>"; };
+		18DBCCC51C9AC0C6004223A5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		18DBCCC61C9AC0C6004223A5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		18DBCCC91C9AE771004223A5 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		18DBCCCA1C9AE771004223A5 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		18DBCCCC1C9AEF08004223A5 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		18DBCCCD1C9AEF08004223A5 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		18DBCCCE1C9AEF08004223A5 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
+		18DBCCCF1C9AEF08004223A5 /* pic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1889218B1C9971910046A16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921A41C9971910046A16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921AF1C9971910046A16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188921851C9971910046A16B = {
+			isa = PBXGroup;
+			children = (
+				188921901C9971910046A16B /* Side Menu - Map */,
+				188921AA1C9971910046A16B /* Side Menu - MapTests */,
+				188921B51C9971910046A16B /* Side Menu - MapUITests */,
+				1889218F1C9971910046A16B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1889218F1C9971910046A16B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1889218E1C9971910046A16B /* Side Menu - Map.app */,
+				188921A71C9971910046A16B /* Side Menu - MapTests.xctest */,
+				188921B21C9971910046A16B /* Side Menu - MapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188921901C9971910046A16B /* Side Menu - Map */ = {
+			isa = PBXGroup;
+			children = (
+				18A0E7441C9C0CAD00B937F8 /* Zoom in - out button */,
+				18DBCCC81C9AE759004223A5 /* Image view */,
+				18DBCCC41C9ABDB7004223A5 /* SideMenu VIew */,
+				18DBCCBB1C9AA9DE004223A5 /* My Views */,
+				18DBCCA81C9AA142004223A5 /* Icons */,
+				18DBCCA51C9A9EE9004223A5 /* Images */,
+				188921C41C9972600046A16B /* SWRevealViewController */,
+				18DBCCC21C9ABD69004223A5 /* FrontView */,
+				18DBCCC31C9ABD97004223A5 /* Map View */,
+				188921941C9971910046A16B /* AppDelegate.h */,
+				188921951C9971910046A16B /* AppDelegate.m */,
+				1889219A1C9971910046A16B /* Main.storyboard */,
+				1889219D1C9971910046A16B /* Assets.xcassets */,
+				1889219F1C9971910046A16B /* LaunchScreen.storyboard */,
+				188921A21C9971910046A16B /* Info.plist */,
+				188921911C9971910046A16B /* Supporting Files */,
+			);
+			path = "Side Menu - Map";
+			sourceTree = "<group>";
+		};
+		188921911C9971910046A16B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				188921921C9971910046A16B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		188921AA1C9971910046A16B /* Side Menu - MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				188921AB1C9971910046A16B /* Side_Menu___MapTests.m */,
+				188921AD1C9971910046A16B /* Info.plist */,
+			);
+			path = "Side Menu - MapTests";
+			sourceTree = "<group>";
+		};
+		188921B51C9971910046A16B /* Side Menu - MapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				188921B61C9971910046A16B /* Side_Menu___MapUITests.m */,
+				188921B81C9971910046A16B /* Info.plist */,
+			);
+			path = "Side Menu - MapUITests";
+			sourceTree = "<group>";
+		};
+		188921C41C9972600046A16B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				188921C51C9972600046A16B /* SWRevealViewController.h */,
+				188921C61C9972600046A16B /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		18A0E7441C9C0CAD00B937F8 /* Zoom in - out button */ = {
+			isa = PBXGroup;
+			children = (
+				18A0E7451C9C0CD400B937F8 /* PushButtonView.h */,
+				18A0E7461C9C0CD400B937F8 /* PushButtonView.m */,
+			);
+			name = "Zoom in - out button";
+			sourceTree = "<group>";
+		};
+		18DBCCA51C9A9EE9004223A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18DBCCCC1C9AEF08004223A5 /* pic1.jpg */,
+				18DBCCCD1C9AEF08004223A5 /* pic2.jpg */,
+				18DBCCCE1C9AEF08004223A5 /* pic3.jpg */,
+				18DBCCCF1C9AEF08004223A5 /* pic4.jpg */,
+				18DBCCA61C9A9EF8004223A5 /* backgroundPic.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		18DBCCA81C9AA142004223A5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				18DBCCA91C9AA151004223A5 /* backBtn.png */,
+				18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */,
+				18DBCCAB1C9AA151004223A5 /* concept-icon-poster60.png */,
+				18DBCCAC1C9AA151004223A5 /* icon_1320_white60.png */,
+				18DBCCAD1C9AA151004223A5 /* icon_back_white.png */,
+				18DBCCAE1C9AA151004223A5 /* menu_icon (1).png */,
+				18DBCCAF1C9AA151004223A5 /* menu_icon.png */,
+				18DBCCB01C9AA151004223A5 /* phone-icon.png */,
+				18DBCCB11C9AA151004223A5 /* topBar.jpg */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		18DBCCBB1C9AA9DE004223A5 /* My Views */ = {
+			isa = PBXGroup;
+			children = (
+				18DBCCBC1C9AAA21004223A5 /* SideMenuCell.h */,
+				18DBCCBD1C9AAA21004223A5 /* SideMenuCell.m */,
+			);
+			name = "My Views";
+			sourceTree = "<group>";
+		};
+		18DBCCC21C9ABD69004223A5 /* FrontView */ = {
+			isa = PBXGroup;
+			children = (
+				188921DC1C99AF020046A16B /* FrontViewController.h */,
+				188921DD1C99AF020046A16B /* FrontViewController.m */,
+			);
+			name = FrontView;
+			sourceTree = "<group>";
+		};
+		18DBCCC31C9ABD97004223A5 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				18DBCCC51C9AC0C6004223A5 /* MapViewController.h */,
+				18DBCCC61C9AC0C6004223A5 /* MapViewController.m */,
+			);
+			name = "Map View";
+			sourceTree = "<group>";
+		};
+		18DBCCC41C9ABDB7004223A5 /* SideMenu VIew */ = {
+			isa = PBXGroup;
+			children = (
+				188921D91C99A96F0046A16B /* MenuTableViewController.h */,
+				188921DA1C99A96F0046A16B /* MenuTableViewController.m */,
+			);
+			name = "SideMenu VIew";
+			sourceTree = "<group>";
+		};
+		18DBCCC81C9AE759004223A5 /* Image view */ = {
+			isa = PBXGroup;
+			children = (
+				18DBCCC91C9AE771004223A5 /* ImageViewController.h */,
+				18DBCCCA1C9AE771004223A5 /* ImageViewController.m */,
+			);
+			name = "Image view";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1889218D1C9971910046A16B /* Side Menu - Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188921BB1C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - Map" */;
+			buildPhases = (
+				1889218A1C9971910046A16B /* Sources */,
+				1889218B1C9971910046A16B /* Frameworks */,
+				1889218C1C9971910046A16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Side Menu - Map";
+			productName = "Side Menu - Map";
+			productReference = 1889218E1C9971910046A16B /* Side Menu - Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188921A61C9971910046A16B /* Side Menu - MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188921BE1C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - MapTests" */;
+			buildPhases = (
+				188921A31C9971910046A16B /* Sources */,
+				188921A41C9971910046A16B /* Frameworks */,
+				188921A51C9971910046A16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188921A91C9971910046A16B /* PBXTargetDependency */,
+			);
+			name = "Side Menu - MapTests";
+			productName = "Side Menu - MapTests";
+			productReference = 188921A71C9971910046A16B /* Side Menu - MapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		188921B11C9971910046A16B /* Side Menu - MapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188921C11C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - MapUITests" */;
+			buildPhases = (
+				188921AE1C9971910046A16B /* Sources */,
+				188921AF1C9971910046A16B /* Frameworks */,
+				188921B01C9971910046A16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188921B41C9971910046A16B /* PBXTargetDependency */,
+			);
+			name = "Side Menu - MapUITests";
+			productName = "Side Menu - MapUITests";
+			productReference = 188921B21C9971910046A16B /* Side Menu - MapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188921861C9971910046A16B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tokovic Goran";
+				TargetAttributes = {
+					1889218D1C9971910046A16B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					188921A61C9971910046A16B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1889218D1C9971910046A16B;
+					};
+					188921B11C9971910046A16B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1889218D1C9971910046A16B;
+					};
+				};
+			};
+			buildConfigurationList = 188921891C9971910046A16B /* Build configuration list for PBXProject "Side Menu - Map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188921851C9971910046A16B;
+			productRefGroup = 1889218F1C9971910046A16B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1889218D1C9971910046A16B /* Side Menu - Map */,
+				188921A61C9971910046A16B /* Side Menu - MapTests */,
+				188921B11C9971910046A16B /* Side Menu - MapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1889218C1C9971910046A16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DBCCB81C9AA151004223A5 /* menu_icon.png in Resources */,
+				18DBCCD11C9AEF08004223A5 /* pic2.jpg in Resources */,
+				18DBCCB91C9AA151004223A5 /* phone-icon.png in Resources */,
+				18DBCCA71C9A9EF8004223A5 /* backgroundPic.jpg in Resources */,
+				188921A11C9971910046A16B /* LaunchScreen.storyboard in Resources */,
+				18DBCCB41C9AA151004223A5 /* concept-icon-poster60.png in Resources */,
+				18DBCCD21C9AEF08004223A5 /* pic3.jpg in Resources */,
+				18DBCCB21C9AA151004223A5 /* backBtn.png in Resources */,
+				18DBCCB51C9AA151004223A5 /* icon_1320_white60.png in Resources */,
+				1889219E1C9971910046A16B /* Assets.xcassets in Resources */,
+				18DBCCB31C9AA151004223A5 /* BigIcon_exclamation.gif in Resources */,
+				18DBCCB61C9AA151004223A5 /* icon_back_white.png in Resources */,
+				18DBCCBA1C9AA151004223A5 /* topBar.jpg in Resources */,
+				1889219C1C9971910046A16B /* Main.storyboard in Resources */,
+				18DBCCD31C9AEF08004223A5 /* pic4.jpg in Resources */,
+				18DBCCD01C9AEF08004223A5 /* pic1.jpg in Resources */,
+				18DBCCB71C9AA151004223A5 /* menu_icon (1).png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921A51C9971910046A16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921B01C9971910046A16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1889218A1C9971910046A16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188921DB1C99A96F0046A16B /* MenuTableViewController.m in Sources */,
+				188921961C9971910046A16B /* AppDelegate.m in Sources */,
+				18A0E7471C9C0CD400B937F8 /* PushButtonView.m in Sources */,
+				18DBCCCB1C9AE771004223A5 /* ImageViewController.m in Sources */,
+				188921931C9971910046A16B /* main.m in Sources */,
+				188921C71C9972600046A16B /* SWRevealViewController.m in Sources */,
+				188921DE1C99AF020046A16B /* FrontViewController.m in Sources */,
+				18DBCCBE1C9AAA21004223A5 /* SideMenuCell.m in Sources */,
+				18DBCCC71C9AC0C7004223A5 /* MapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921A31C9971910046A16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188921AC1C9971910046A16B /* Side_Menu___MapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188921AE1C9971910046A16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188921B71C9971910046A16B /* Side_Menu___MapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188921A91C9971910046A16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1889218D1C9971910046A16B /* Side Menu - Map */;
+			targetProxy = 188921A81C9971910046A16B /* PBXContainerItemProxy */;
+		};
+		188921B41C9971910046A16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1889218D1C9971910046A16B /* Side Menu - Map */;
+			targetProxy = 188921B31C9971910046A16B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1889219A1C9971910046A16B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1889219B1C9971910046A16B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1889219F1C9971910046A16B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188921A01C9971910046A16B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188921B91C9971910046A16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		188921BA1C9971910046A16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188921BC1C9971910046A16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Side Menu - Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---Map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		188921BD1C9971910046A16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Side Menu - Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---Map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		188921BF1C9971910046A16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Side Menu - MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---MapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Side Menu - Map.app/Side Menu - Map";
+			};
+			name = Debug;
+		};
+		188921C01C9971910046A16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Side Menu - MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---MapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Side Menu - Map.app/Side Menu - Map";
+			};
+			name = Release;
+		};
+		188921C21C9971910046A16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Side Menu - MapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---MapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Side Menu - Map";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		188921C31C9971910046A16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Side Menu - MapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---MapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Side Menu - Map";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188921891C9971910046A16B /* Build configuration list for PBXProject "Side Menu - Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188921B91C9971910046A16B /* Debug */,
+				188921BA1C9971910046A16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188921BB1C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188921BC1C9971910046A16B /* Debug */,
+				188921BD1C9971910046A16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188921BE1C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188921BF1C9971910046A16B /* Debug */,
+				188921C01C9971910046A16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188921C11C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - MapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188921C21C9971910046A16B /* Debug */,
+				188921C31C9971910046A16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188921861C9971910046A16B /* Project object */;
+}
