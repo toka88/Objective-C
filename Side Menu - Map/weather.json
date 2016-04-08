@@ -1,0 +1,6 @@
+{"coord":{"lon":19.84,"lat":45.25},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":291.18,"pressure":1014,"humidity":67,"temp_min":290.15,"temp_max":292.15},"visibility":10000,"wind":{"speed":1.86,"deg":213.002},"clouds":{"all":0},"dt":1459495800,"sys":{"type":1,"id":5970,"message":0.0323,"country":"RS","sunrise":1459484402,"sunset":1459530560},"id":3194360,"name":"Novi Sad","cod":200}
+
+
+
+
+http://api.openweathermap.org/data/2.5/weather?lat=45.255541&lon=19.833616&appid=5397c1af17fbb5af41946989d2e01642

@@ -38,7 +38,7 @@
     
     SWRevealViewController *revealController = [self revealViewController];
     
-    [revealController panGestureRecognizer];
+   // [revealController panGestureRecognizer];
     
     //Menu button
     

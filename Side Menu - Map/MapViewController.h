@@ -6,10 +6,17 @@
 //  Copyright © 2016 Tokovic Goran. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "OverlaySelectionView.h"
 #import <MapKit/MapKit.h>
+#import <UIKit/UIKit.h>
 
+typedef struct {
+    CLLocationDegrees minLatitude;
+    CLLocationDegrees maxLatitude;
+    CLLocationDegrees minLongitude;
+    CLLocationDegrees maxLongitude;
+} LocationBounds;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, OverlaySelectionViewDelegate>
 
 @end

@@ -26,7 +26,7 @@
         /******  INIT UI  ***************/
         UIImage *icon = [[UIImage imageNamed:@"concept-icon-poster60.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         
-        _iconView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 10, 40, 40)];
+        _iconView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 5, 50, 50)];
         _iconView.image = icon;
         _iconView.tintColor = [UIColor blackColor];
         

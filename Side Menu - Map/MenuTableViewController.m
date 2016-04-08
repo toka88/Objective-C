@@ -13,6 +13,10 @@
 #import "SWRevealViewController.h"
 #import "FrontViewController.h"
 #import "ImageViewController.h"
+#import "ThreadViewController.h"
+#import "EMailViewController.h"
+#import "WebViewController.h"
+
 
 @interface MenuTableViewController ()
 
@@ -35,7 +39,7 @@
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
     
     
-    _titlesArray = @[@"Main Screen",@"Map", @"Picture"];
+    _titlesArray = @[@"Main Screen",@"Map", @"Picture",@"Thread",@"e-Mail",@"WEB"];
     
     [self.tableView registerClass:[SideMenuCell class] forCellReuseIdentifier:self.menuReuseIdentifier];
     
@@ -44,6 +48,8 @@
     
     gradien.colors = @[(id)[[UIColor colorWithRed:0.749 green:0.749 blue:0.749 alpha:1]CGColor],(id)[[UIColor colorWithRed:0.07854 green:0.07854 blue:0.07854 alpha:1]CGColor]];
     [self.tableView.backgroundView.layer addSublayer:gradien];
+    
+    [self.tableView setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.9]];
     //self.tableView.backgroundColor  = [UIColor clearColor];
     
     //self.tableView.backgroundColor = [UIColor purpleColor];
@@ -80,13 +86,32 @@
     
     
     cell.cellTitleLabel.text = self.titlesArray[indexPath.row];
-    if (indexPath.row == 1) {
-        cell.iconView.image = [[UIImage imageNamed:@"icon_1320_white60.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    if (indexPath.row == 0) {
+        
+        cell.iconView.image = [UIImage imageNamed:@"main_icon.png"];
+        
+        
+    }else if (indexPath.row == 1) {
+        
+        cell.iconView.image = [UIImage imageNamed:@"map-icon.png"];
         
         //cell.iconView.tintColor = [UIColor blackColor];
     }else if(indexPath.row == 2){
         
-        cell.iconView.image = [[UIImage imageNamed:@"phone-icon.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+      //  cell.iconView.image = [[UIImage imageNamed:@"pic-icon.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        
+        cell.iconView.image = [UIImage imageNamed:@"pic-icon.png"];
+    }else if (indexPath.row == 3){
+        
+        cell.iconView.image = [UIImage imageNamed:@"thread-icon.png"];
+        
+    }else if (indexPath.row == 4){
+        
+        cell.iconView.image = [UIImage imageNamed:@"mail-icon.png"];
+        
+    }else if (indexPath.row == 5){
+        
+        cell.iconView.image = [UIImage imageNamed:@"web_icon.png"];
     }
     
     
@@ -99,6 +124,9 @@
     return  60;
 }
 
+
+
+#pragma mark - Create and open new viewController
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -122,6 +150,31 @@
         [[UINavigationController alloc] initWithRootViewController:imageViewController];
         
         [self.revealViewController pushFrontViewController:navigationController animated:YES];
+    }else if(indexPath.row == 3){
+        
+        ThreadViewController* viewController = [[ThreadViewController alloc] init];
+        
+        UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        
+        [self.revealViewController pushFrontViewController:navigationController animated:YES];
+        
+        
+    } else if (indexPath.row == 4){
+        
+        
+        EMailViewController * viewController = [[EMailViewController alloc] init];
+        UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        
+        [self.revealViewController pushFrontViewController:navigationController animated:YES];
+        
+        
+    } else if (indexPath.row == 5){
+        
+        WebViewController * viewController = [[WebViewController alloc] init];
+        UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        
+        [self.revealViewController pushFrontViewController:navigationController animated:YES];
+        
     }
     
 }

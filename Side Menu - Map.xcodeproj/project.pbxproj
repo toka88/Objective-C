@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181B20131CABC16500451804 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B20121CABC16500451804 /* WebViewController.m */; };
+		181B20151CABCC5900451804 /* arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20141CABCC5900451804 /* arrow_icon.png */; };
+		181B20171CABCD3E00451804 /* arrow_icon_640x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20161CABCD3E00451804 /* arrow_icon_640x640.png */; };
+		181B201D1CABDC1C00451804 /* map-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B201C1CABDC1C00451804 /* map-icon.png */; };
+		181B201F1CABDC6800451804 /* pic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B201E1CABDC6800451804 /* pic-icon.png */; };
+		181B20231CABDD5F00451804 /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20221CABDD5F00451804 /* mail-icon.png */; };
+		181B20251CABDDCF00451804 /* web_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20241CABDDCF00451804 /* web_icon.png */; };
+		181B20271CABDEC100451804 /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20261CABDEC100451804 /* main_icon.png */; };
+		181B20291CABE14900451804 /* thread-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181B20281CABE14900451804 /* thread-icon.png */; };
+		181FAD5C1CAD1799007A0274 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181FAD5B1CAD1799007A0274 /* AVFoundation.framework */; };
+		181FAD601CAD197A007A0274 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FAD5F1CAD197A007A0274 /* StreamViewController.m */; };
+		181FAD621CAD2EA0007A0274 /* pesma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 181FAD611CAD2EA0007A0274 /* pesma.mp3 */; };
+		182548301CB260EA001BF233 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825482F1CB260EA001BF233 /* WeatherViewController.m */; };
+		184CEF611CA2A4A50092AFF0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CEF601CA2A4A50092AFF0 /* FirstViewController.m */; };
+		184CEF641CA2A4B30092AFF0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CEF631CA2A4B30092AFF0 /* SecondViewController.m */; };
+		185AAA9C1CAA6695004C9839 /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AAA9B1CAA6695004C9839 /* LocationHandler.m */; };
+		185AAAA01CAA7556004C9839 /* DistanceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AAA9F1CAA7556004C9839 /* DistanceInfoViewController.m */; };
+		185AAAA31CAA7628004C9839 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AAAA21CAA7628004C9839 /* InfoView.m */; };
+		186649B91CB3A53C0015EF97 /* WeatherUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 186649B81CB3A53C0015EF97 /* WeatherUserService.m */; };
 		188921931C9971910046A16B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921921C9971910046A16B /* main.m */; };
 		188921961C9971910046A16B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921951C9971910046A16B /* AppDelegate.m */; };
 		1889219C1C9971910046A16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889219A1C9971910046A16B /* Main.storyboard */; };
@@ -18,6 +37,10 @@
 		188921DB1C99A96F0046A16B /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921DA1C99A96F0046A16B /* MenuTableViewController.m */; };
 		188921DE1C99AF020046A16B /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188921DD1C99AF020046A16B /* FrontViewController.m */; };
 		18A0E7471C9C0CD400B937F8 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0E7461C9C0CD400B937F8 /* PushButtonView.m */; };
+		18CED25E1CA52F9600012256 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CED25B1CA52F9600012256 /* CircleView.m */; };
+		18CED25F1CA52F9600012256 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CED25D1CA52F9600012256 /* LoadingView.m */; };
+		18CED2621CA5304800012256 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CED2611CA5304800012256 /* ThreadViewController.m */; };
+		18DA25EC1CA97F5000B5D205 /* EMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA25EB1CA97F5000B5D205 /* EMailViewController.m */; };
 		18DBCCA71C9A9EF8004223A5 /* backgroundPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCA61C9A9EF8004223A5 /* backgroundPic.jpg */; };
 		18DBCCB21C9AA151004223A5 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCA91C9AA151004223A5 /* backBtn.png */; };
 		18DBCCB31C9AA151004223A5 /* BigIcon_exclamation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */; };
@@ -35,6 +58,18 @@
 		18DBCCD11C9AEF08004223A5 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCD1C9AEF08004223A5 /* pic2.jpg */; };
 		18DBCCD21C9AEF08004223A5 /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCE1C9AEF08004223A5 /* pic3.jpg */; };
 		18DBCCD31C9AEF08004223A5 /* pic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18DBCCCF1C9AEF08004223A5 /* pic4.jpg */; };
+		18E4A5891CAE650F00EFF7D0 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E4A5881CAE650E00EFF7D0 /* weather.json */; };
+		18E4A58D1CAE68FF00EFF7D0 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A58C1CAE68FF00EFF7D0 /* Weather.m */; };
+		18E4A5CD1CAE701500EFF7D0 /* WeatherBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5CC1CAE701500EFF7D0 /* WeatherBaseService.m */; };
+		18E4A5D31CAE7A3600EFF7D0 /* SPAFNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5D21CAE7A3600EFF7D0 /* SPAFNRequest.m */; };
+		18E4A5D61CAE7CEC00EFF7D0 /* JSONParserBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5D51CAE7CEC00EFF7D0 /* JSONParserBaseService.m */; };
+		18EF96FA1CB4FCAD008EAF46 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 18EF96F71CB4FCAD008EAF46 /* .gitkeep */; };
+		18EF96FB1CB4FCAD008EAF46 /* TKParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF96F91CB4FCAD008EAF46 /* TKParallaxScrollView.m */; };
+		18F384561CA0119100A094D2 /* OverlaySelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F384551CA0119100A094D2 /* OverlaySelectionView.m */; };
+		18FE063D1CB7972B00793B52 /* ScrollGraphUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE063C1CB7972A00793B52 /* ScrollGraphUIView.m */; };
+		18FE06401CB7AC1900793B52 /* DailyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE063F1CB7AC1900793B52 /* DailyData.m */; };
+		18FE06441CB7EF1100793B52 /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE06431CB7EF1100793B52 /* WeatherTableViewCell.m */; };
+		433A451E1B15D5B638854C24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D8F2F6263E2434911508C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +90,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181B20111CABC16500451804 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		181B20121CABC16500451804 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		181B20141CABCC5900451804 /* arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon.png; sourceTree = "<group>"; };
+		181B20161CABCD3E00451804 /* arrow_icon_640x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon_640x640.png; sourceTree = "<group>"; };
+		181B201C1CABDC1C00451804 /* map-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon.png"; sourceTree = "<group>"; };
+		181B201E1CABDC6800451804 /* pic-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic-icon.png"; sourceTree = "<group>"; };
+		181B20221CABDD5F00451804 /* mail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-icon.png"; sourceTree = "<group>"; };
+		181B20241CABDDCF00451804 /* web_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_icon.png; sourceTree = "<group>"; };
+		181B20261CABDEC100451804 /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
+		181B20281CABE14900451804 /* thread-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thread-icon.png"; sourceTree = "<group>"; };
+		181FAD5B1CAD1799007A0274 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		181FAD5E1CAD197A007A0274 /* StreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamViewController.h; sourceTree = "<group>"; };
+		181FAD5F1CAD197A007A0274 /* StreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamViewController.m; sourceTree = "<group>"; };
+		181FAD611CAD2EA0007A0274 /* pesma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pesma.mp3; sourceTree = "<group>"; };
+		1825482E1CB260EA001BF233 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		1825482F1CB260EA001BF233 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		184CEF5F1CA2A4A50092AFF0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		184CEF601CA2A4A50092AFF0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		184CEF621CA2A4B30092AFF0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		184CEF631CA2A4B30092AFF0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		184CEF651CA2FA890092AFF0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		185AAA9A1CAA6695004C9839 /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		185AAA9B1CAA6695004C9839 /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
+		185AAA9E1CAA7556004C9839 /* DistanceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceInfoViewController.h; sourceTree = "<group>"; };
+		185AAA9F1CAA7556004C9839 /* DistanceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceInfoViewController.m; sourceTree = "<group>"; };
+		185AAAA11CAA7628004C9839 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		185AAAA21CAA7628004C9839 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		186649B71CB3A53C0015EF97 /* WeatherUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherUserService.h; sourceTree = "<group>"; };
+		186649B81CB3A53C0015EF97 /* WeatherUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherUserService.m; sourceTree = "<group>"; };
 		1889218E1C9971910046A16B /* Side Menu - Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu - Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188921921C9971910046A16B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188921941C9971910046A16B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +141,14 @@
 		188921DD1C99AF020046A16B /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		18A0E7451C9C0CD400B937F8 /* PushButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButtonView.h; sourceTree = "<group>"; };
 		18A0E7461C9C0CD400B937F8 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
+		18CED25A1CA52F9600012256 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		18CED25B1CA52F9600012256 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		18CED25C1CA52F9600012256 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		18CED25D1CA52F9600012256 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		18CED2601CA5304800012256 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		18CED2611CA5304800012256 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		18DA25EA1CA97F5000B5D205 /* EMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMailViewController.h; sourceTree = "<group>"; };
+		18DA25EB1CA97F5000B5D205 /* EMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMailViewController.m; sourceTree = "<group>"; };
 		18DBCCA61C9A9EF8004223A5 /* backgroundPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundPic.jpg; sourceTree = "<group>"; };
 		18DBCCA91C9AA151004223A5 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
 		18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BigIcon_exclamation.gif; sourceTree = "<group>"; };
@@ -97,6 +169,29 @@
 		18DBCCCD1C9AEF08004223A5 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 		18DBCCCE1C9AEF08004223A5 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
 		18DBCCCF1C9AEF08004223A5 /* pic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpg; sourceTree = "<group>"; };
+		18E4A5881CAE650E00EFF7D0 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		18E4A58B1CAE68FF00EFF7D0 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		18E4A58C1CAE68FF00EFF7D0 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		18E4A5CB1CAE701500EFF7D0 /* WeatherBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherBaseService.h; sourceTree = "<group>"; };
+		18E4A5CC1CAE701500EFF7D0 /* WeatherBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherBaseService.m; sourceTree = "<group>"; };
+		18E4A5D11CAE7A3600EFF7D0 /* SPAFNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAFNRequest.h; sourceTree = "<group>"; };
+		18E4A5D21CAE7A3600EFF7D0 /* SPAFNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAFNRequest.m; sourceTree = "<group>"; };
+		18E4A5D41CAE7CEC00EFF7D0 /* JSONParserBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParserBaseService.h; sourceTree = "<group>"; };
+		18E4A5D51CAE7CEC00EFF7D0 /* JSONParserBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParserBaseService.m; sourceTree = "<group>"; };
+		18EF96F71CB4FCAD008EAF46 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		18EF96F81CB4FCAD008EAF46 /* TKParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKParallaxScrollView.h; sourceTree = "<group>"; };
+		18EF96F91CB4FCAD008EAF46 /* TKParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKParallaxScrollView.m; sourceTree = "<group>"; };
+		18F384541CA0119100A094D2 /* OverlaySelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlaySelectionView.h; sourceTree = "<group>"; };
+		18F384551CA0119100A094D2 /* OverlaySelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlaySelectionView.m; sourceTree = "<group>"; };
+		18FE063B1CB7972A00793B52 /* ScrollGraphUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollGraphUIView.h; sourceTree = "<group>"; };
+		18FE063C1CB7972A00793B52 /* ScrollGraphUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollGraphUIView.m; sourceTree = "<group>"; };
+		18FE063E1CB7AC1900793B52 /* DailyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyData.h; sourceTree = "<group>"; };
+		18FE063F1CB7AC1900793B52 /* DailyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyData.m; sourceTree = "<group>"; };
+		18FE06421CB7EF1100793B52 /* WeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCell.h; sourceTree = "<group>"; };
+		18FE06431CB7EF1100793B52 /* WeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCell.m; sourceTree = "<group>"; };
+		290D8F2F6263E2434911508C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F78C3DF6D2A4D4982020BB5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B1AEF92EC5C20FFE4C75FB31 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +199,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181FAD5C1CAD1799007A0274 /* AVFoundation.framework in Frameworks */,
+				433A451E1B15D5B638854C24 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,13 +221,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181B20101CABC13700451804 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				181B20111CABC16500451804 /* WebViewController.h */,
+				181B20121CABC16500451804 /* WebViewController.m */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		181FAD5D1CAD1957007A0274 /* StreamViewController */ = {
+			isa = PBXGroup;
+			children = (
+				181FAD611CAD2EA0007A0274 /* pesma.mp3 */,
+				18E4A5881CAE650E00EFF7D0 /* weather.json */,
+				181FAD5E1CAD197A007A0274 /* StreamViewController.h */,
+				181FAD5F1CAD197A007A0274 /* StreamViewController.m */,
+			);
+			name = StreamViewController;
+			sourceTree = "<group>";
+		};
+		1825482D1CB260C3001BF233 /* WatherController */ = {
+			isa = PBXGroup;
+			children = (
+				18FE06411CB7EED300793B52 /* WeatherCellView */,
+				18E4A58A1CAE68E100EFF7D0 /* Weather */,
+				18FE063A1CB7971F00793B52 /* Chart */,
+				1825482E1CB260EA001BF233 /* WeatherViewController.h */,
+				1825482F1CB260EA001BF233 /* WeatherViewController.m */,
+			);
+			name = WatherController;
+			sourceTree = "<group>";
+		};
+		184CEF5E1CA2A46E0092AFF0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				184CEF5F1CA2A4A50092AFF0 /* FirstViewController.h */,
+				184CEF601CA2A4A50092AFF0 /* FirstViewController.m */,
+				184CEF621CA2A4B30092AFF0 /* SecondViewController.h */,
+				184CEF631CA2A4B30092AFF0 /* SecondViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		185AAA9D1CAA74D4004C9839 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				185AAA9A1CAA6695004C9839 /* LocationHandler.h */,
+				185AAA9B1CAA6695004C9839 /* LocationHandler.m */,
+				185AAA9E1CAA7556004C9839 /* DistanceInfoViewController.h */,
+				185AAA9F1CAA7556004C9839 /* DistanceInfoViewController.m */,
+				185AAAA11CAA7628004C9839 /* InfoView.h */,
+				185AAAA21CAA7628004C9839 /* InfoView.m */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		188921851C9971910046A16B = {
 			isa = PBXGroup;
 			children = (
+				18EF96F61CB4FCAD008EAF46 /* TKParallaxScrollView */,
+				181FAD5B1CAD1799007A0274 /* AVFoundation.framework */,
 				188921901C9971910046A16B /* Side Menu - Map */,
 				188921AA1C9971910046A16B /* Side Menu - MapTests */,
 				188921B51C9971910046A16B /* Side Menu - MapUITests */,
 				1889218F1C9971910046A16B /* Products */,
+				3C4195F8A3954C5D44C8BED7 /* Pods */,
+				25A62C0DC59E9CED852856BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +304,12 @@
 		188921901C9971910046A16B /* Side Menu - Map */ = {
 			isa = PBXGroup;
 			children = (
+				18E4A5CA1CAE6FAC00EFF7D0 /* Services */,
+				181B20101CABC13700451804 /* WebView */,
+				18DA25E91CA97F1F00B5D205 /* eMail */,
+				18CED2591CA52F7D00012256 /* Loading */,
+				18CED2551CA52F0B00012256 /* Thread */,
+				18F384531CA0117000A094D2 /* OverlaySelectionView */,
 				18A0E7441C9C0CAD00B937F8 /* Zoom in - out button */,
 				18DBCCC81C9AE759004223A5 /* Image view */,
 				18DBCCC41C9ABDB7004223A5 /* SideMenu VIew */,
@@ -163,6 +326,7 @@
 				1889219F1C9971910046A16B /* LaunchScreen.storyboard */,
 				188921A21C9971910046A16B /* Info.plist */,
 				188921911C9971910046A16B /* Supporting Files */,
+				184CEF651CA2FA890092AFF0 /* Constants.h */,
 			);
 			path = "Side Menu - Map";
 			sourceTree = "<group>";
@@ -211,6 +375,35 @@
 			name = "Zoom in - out button";
 			sourceTree = "<group>";
 		};
+		18CED2551CA52F0B00012256 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				18CED2601CA5304800012256 /* ThreadViewController.h */,
+				18CED2611CA5304800012256 /* ThreadViewController.m */,
+			);
+			name = Thread;
+			sourceTree = "<group>";
+		};
+		18CED2591CA52F7D00012256 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				18CED25A1CA52F9600012256 /* CircleView.h */,
+				18CED25B1CA52F9600012256 /* CircleView.m */,
+				18CED25C1CA52F9600012256 /* LoadingView.h */,
+				18CED25D1CA52F9600012256 /* LoadingView.m */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		18DA25E91CA97F1F00B5D205 /* eMail */ = {
+			isa = PBXGroup;
+			children = (
+				18DA25EA1CA97F5000B5D205 /* EMailViewController.h */,
+				18DA25EB1CA97F5000B5D205 /* EMailViewController.m */,
+			);
+			name = eMail;
+			sourceTree = "<group>";
+		};
 		18DBCCA51C9A9EE9004223A5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +419,14 @@
 		18DBCCA81C9AA142004223A5 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				181B20261CABDEC100451804 /* main_icon.png */,
+				181B20281CABE14900451804 /* thread-icon.png */,
+				181B20241CABDDCF00451804 /* web_icon.png */,
+				181B20221CABDD5F00451804 /* mail-icon.png */,
+				181B201E1CABDC6800451804 /* pic-icon.png */,
+				181B201C1CABDC1C00451804 /* map-icon.png */,
+				181B20161CABCD3E00451804 /* arrow_icon_640x640.png */,
+				181B20141CABCC5900451804 /* arrow_icon.png */,
 				18DBCCA91C9AA151004223A5 /* backBtn.png */,
 				18DBCCAA1C9AA151004223A5 /* BigIcon_exclamation.gif */,
 				18DBCCAB1C9AA151004223A5 /* concept-icon-poster60.png */,
@@ -251,6 +452,8 @@
 		18DBCCC21C9ABD69004223A5 /* FrontView */ = {
 			isa = PBXGroup;
 			children = (
+				181FAD5D1CAD1957007A0274 /* StreamViewController */,
+				184CEF5E1CA2A46E0092AFF0 /* View Controllers */,
 				188921DC1C99AF020046A16B /* FrontViewController.h */,
 				188921DD1C99AF020046A16B /* FrontViewController.m */,
 			);
@@ -260,6 +463,8 @@
 		18DBCCC31C9ABD97004223A5 /* Map View */ = {
 			isa = PBXGroup;
 			children = (
+				1825482D1CB260C3001BF233 /* WatherController */,
+				185AAA9D1CAA74D4004C9839 /* New Group */,
 				18DBCCC51C9AC0C6004223A5 /* MapViewController.h */,
 				18DBCCC61C9AC0C6004223A5 /* MapViewController.m */,
 			);
@@ -284,6 +489,86 @@
 			name = "Image view";
 			sourceTree = "<group>";
 		};
+		18E4A58A1CAE68E100EFF7D0 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				18E4A58B1CAE68FF00EFF7D0 /* Weather.h */,
+				18E4A58C1CAE68FF00EFF7D0 /* Weather.m */,
+				18FE063E1CB7AC1900793B52 /* DailyData.h */,
+				18FE063F1CB7AC1900793B52 /* DailyData.m */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		18E4A5CA1CAE6FAC00EFF7D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18E4A5D11CAE7A3600EFF7D0 /* SPAFNRequest.h */,
+				18E4A5D21CAE7A3600EFF7D0 /* SPAFNRequest.m */,
+				18E4A5CB1CAE701500EFF7D0 /* WeatherBaseService.h */,
+				18E4A5CC1CAE701500EFF7D0 /* WeatherBaseService.m */,
+				18E4A5D41CAE7CEC00EFF7D0 /* JSONParserBaseService.h */,
+				18E4A5D51CAE7CEC00EFF7D0 /* JSONParserBaseService.m */,
+				186649B71CB3A53C0015EF97 /* WeatherUserService.h */,
+				186649B81CB3A53C0015EF97 /* WeatherUserService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		18EF96F61CB4FCAD008EAF46 /* TKParallaxScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18EF96F71CB4FCAD008EAF46 /* .gitkeep */,
+				18EF96F81CB4FCAD008EAF46 /* TKParallaxScrollView.h */,
+				18EF96F91CB4FCAD008EAF46 /* TKParallaxScrollView.m */,
+			);
+			path = TKParallaxScrollView;
+			sourceTree = "<group>";
+		};
+		18F384531CA0117000A094D2 /* OverlaySelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				18F384541CA0119100A094D2 /* OverlaySelectionView.h */,
+				18F384551CA0119100A094D2 /* OverlaySelectionView.m */,
+			);
+			name = OverlaySelectionView;
+			sourceTree = "<group>";
+		};
+		18FE063A1CB7971F00793B52 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				18FE063B1CB7972A00793B52 /* ScrollGraphUIView.h */,
+				18FE063C1CB7972A00793B52 /* ScrollGraphUIView.m */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
+		18FE06411CB7EED300793B52 /* WeatherCellView */ = {
+			isa = PBXGroup;
+			children = (
+				18FE06421CB7EF1100793B52 /* WeatherTableViewCell.h */,
+				18FE06431CB7EF1100793B52 /* WeatherTableViewCell.m */,
+			);
+			name = WeatherCellView;
+			sourceTree = "<group>";
+		};
+		25A62C0DC59E9CED852856BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290D8F2F6263E2434911508C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C4195F8A3954C5D44C8BED7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F78C3DF6D2A4D4982020BB5 /* Pods.debug.xcconfig */,
+				B1AEF92EC5C20FFE4C75FB31 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,9 +576,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188921BB1C9971910046A16B /* Build configuration list for PBXNativeTarget "Side Menu - Map" */;
 			buildPhases = (
+				E4C6E3BCBC52B3E512F8796A /* Check Pods Manifest.lock */,
 				1889218A1C9971910046A16B /* Sources */,
 				1889218B1C9971910046A16B /* Frameworks */,
 				1889218C1C9971910046A16B /* Resources */,
+				3A7C22D8FDD0B7DC45966632 /* Embed Pods Frameworks */,
+				F4FF303DA33718694466E0B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,21 +677,32 @@
 			files = (
 				18DBCCB81C9AA151004223A5 /* menu_icon.png in Resources */,
 				18DBCCD11C9AEF08004223A5 /* pic2.jpg in Resources */,
+				181B20231CABDD5F00451804 /* mail-icon.png in Resources */,
 				18DBCCB91C9AA151004223A5 /* phone-icon.png in Resources */,
 				18DBCCA71C9A9EF8004223A5 /* backgroundPic.jpg in Resources */,
+				181B20251CABDDCF00451804 /* web_icon.png in Resources */,
 				188921A11C9971910046A16B /* LaunchScreen.storyboard in Resources */,
 				18DBCCB41C9AA151004223A5 /* concept-icon-poster60.png in Resources */,
+				18E4A5891CAE650F00EFF7D0 /* weather.json in Resources */,
+				181B20151CABCC5900451804 /* arrow_icon.png in Resources */,
 				18DBCCD21C9AEF08004223A5 /* pic3.jpg in Resources */,
 				18DBCCB21C9AA151004223A5 /* backBtn.png in Resources */,
+				181FAD621CAD2EA0007A0274 /* pesma.mp3 in Resources */,
 				18DBCCB51C9AA151004223A5 /* icon_1320_white60.png in Resources */,
 				1889219E1C9971910046A16B /* Assets.xcassets in Resources */,
+				181B201D1CABDC1C00451804 /* map-icon.png in Resources */,
+				181B20271CABDEC100451804 /* main_icon.png in Resources */,
 				18DBCCB31C9AA151004223A5 /* BigIcon_exclamation.gif in Resources */,
 				18DBCCB61C9AA151004223A5 /* icon_back_white.png in Resources */,
+				181B20291CABE14900451804 /* thread-icon.png in Resources */,
 				18DBCCBA1C9AA151004223A5 /* topBar.jpg in Resources */,
 				1889219C1C9971910046A16B /* Main.storyboard in Resources */,
+				181B201F1CABDC6800451804 /* pic-icon.png in Resources */,
+				181B20171CABCD3E00451804 /* arrow_icon_640x640.png in Resources */,
 				18DBCCD31C9AEF08004223A5 /* pic4.jpg in Resources */,
 				18DBCCD01C9AEF08004223A5 /* pic1.jpg in Resources */,
 				18DBCCB71C9AA151004223A5 /* menu_icon (1).png in Resources */,
+				18EF96FA1CB4FCAD008EAF46 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,18 +722,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A7C22D8FDD0B7DC45966632 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C6E3BCBC52B3E512F8796A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FF303DA33718694466E0B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1889218A1C9971910046A16B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184CEF641CA2A4B30092AFF0 /* SecondViewController.m in Sources */,
+				18CED25F1CA52F9600012256 /* LoadingView.m in Sources */,
+				185AAA9C1CAA6695004C9839 /* LocationHandler.m in Sources */,
+				185AAAA01CAA7556004C9839 /* DistanceInfoViewController.m in Sources */,
+				182548301CB260EA001BF233 /* WeatherViewController.m in Sources */,
+				18FE06401CB7AC1900793B52 /* DailyData.m in Sources */,
+				184CEF611CA2A4A50092AFF0 /* FirstViewController.m in Sources */,
 				188921DB1C99A96F0046A16B /* MenuTableViewController.m in Sources */,
+				18FE063D1CB7972B00793B52 /* ScrollGraphUIView.m in Sources */,
+				18FE06441CB7EF1100793B52 /* WeatherTableViewCell.m in Sources */,
+				18E4A5D31CAE7A3600EFF7D0 /* SPAFNRequest.m in Sources */,
 				188921961C9971910046A16B /* AppDelegate.m in Sources */,
+				18CED25E1CA52F9600012256 /* CircleView.m in Sources */,
+				18F384561CA0119100A094D2 /* OverlaySelectionView.m in Sources */,
+				18EF96FB1CB4FCAD008EAF46 /* TKParallaxScrollView.m in Sources */,
+				18DA25EC1CA97F5000B5D205 /* EMailViewController.m in Sources */,
+				181FAD601CAD197A007A0274 /* StreamViewController.m in Sources */,
 				18A0E7471C9C0CD400B937F8 /* PushButtonView.m in Sources */,
+				181B20131CABC16500451804 /* WebViewController.m in Sources */,
+				18E4A5CD1CAE701500EFF7D0 /* WeatherBaseService.m in Sources */,
 				18DBCCCB1C9AE771004223A5 /* ImageViewController.m in Sources */,
 				188921931C9971910046A16B /* main.m in Sources */,
 				188921C71C9972600046A16B /* SWRevealViewController.m in Sources */,
+				186649B91CB3A53C0015EF97 /* WeatherUserService.m in Sources */,
+				18E4A5D61CAE7CEC00EFF7D0 /* JSONParserBaseService.m in Sources */,
+				18E4A58D1CAE68FF00EFF7D0 /* Weather.m in Sources */,
 				188921DE1C99AF020046A16B /* FrontViewController.m in Sources */,
+				185AAAA31CAA7628004C9839 /* InfoView.m in Sources */,
+				18CED2621CA5304800012256 /* ThreadViewController.m in Sources */,
 				18DBCCBE1C9AAA21004223A5 /* SideMenuCell.m in Sources */,
 				18DBCCC71C9AC0C7004223A5 /* MapViewController.m in Sources */,
 			);
@@ -573,23 +942,32 @@
 		};
 		188921BC1C9971910046A16B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F78C3DF6D2A4D4982020BB5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Side Menu - Map/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---Map";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalatrium.goran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bc3db2b-0397-4367-b9fe-8b405b24719f";
 			};
 			name = Debug;
 		};
 		188921BD1C9971910046A16B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AEF92EC5C20FFE4C75FB31 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Side Menu - Map/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goran.Side-Menu---Map";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalatrium.goran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bc3db2b-0397-4367-b9fe-8b405b24719f";
 			};
 			name = Release;
 		};
