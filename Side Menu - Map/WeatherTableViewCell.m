@@ -29,6 +29,8 @@
 
 - (void)commonInit
 {
+    
+    [self setBackgroundColor:[UIColor clearColor]];
 
     self.dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.frame.size.width - 20, self.frame.size.height)];
     [self.dateLabel setTextColor:[UIColor whiteColor]];
@@ -36,7 +38,7 @@
     [self.dateLabel setFont:[UIFont fontWithName:@"ChalkboardSE-Regular" size:12]];
     [self addSubview:self.dateLabel];
 
-    self.iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - self.frame.size.height / 2, 0, self.frame.size.height, self.frame.size.height)];
+    self.iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width/2 - self.frame.size.height / 2, 0, self.frame.size.height, self.frame.size.height)];
     [self addSubview:self.iconImageView];
 
     self.temperatureLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.iconImageView.frame), 0, self.frame.size.width - 10 - CGRectGetMaxX(self.iconImageView.frame), self.frame.size.height)];
@@ -58,10 +60,16 @@
     // Configure the view for the selected state
 }
 
-- (void)setCellData:(NSString*)date iconURL:(NSString*)url temperature:(NSString*)temeperature
+- (void)setCellData:(NSDate*)date iconURL:(NSString*)url temperature:(double)temeperature
 {
     
-    [self.dateLabel setText:date];
+    NSDateFormatter* dateFormatter = [NSDateFormatter new];
+    [dateFormatter setDateFormat:@"dd.MM"];
+    
+    NSString * dateString = [dateFormatter stringFromDate:date];
+    NSLog(@"dateString: %@", dateString);
+    [self.dateLabel setText:dateString];
+    [self.temperatureLabel setText:[NSString stringWithFormat:@"%2.1f°C", temeperature]];
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSData* data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];

@@ -10,6 +10,6 @@
 
 @interface WeatherTableViewCell : UITableViewCell
 
-- (void)setCellData:(NSString*)date iconURL:(NSString*)url temperature:(NSString*)temeperature;
+- (void)setCellData:(NSDate*)date iconURL:(NSString*)url temperature:(double)temeperature;
 
 @end

@@ -20,7 +20,7 @@
 #import "ScrollGraphUIView.h"
 #import "WeatherTableViewCell.h"
 
-#define SHOW_BORDER_MACRO
+//#define SHOW_BORDER_MACRO
 
 #define TOP_CONTAINER_HEIGHT 150
 #define CONTAINER_WIDTH 335
@@ -34,6 +34,7 @@
 @property (strong, nonatomic) UIScrollView* scrollView;
 @property (strong, nonatomic) UIView* containerView;
 @property (strong, nonatomic) UIView* bottomContainerView;
+@property (strong, nonatomic) UILabel* whiteLine;
 
 //Top container items
 @property (strong, nonatomic) NSString* url;
@@ -47,6 +48,8 @@
 //Bottom container items
 @property(strong, nonatomic) ScrollGraphUIView* temperatureGraph;
 @property(strong, nonatomic) UITableView* tableView;
+@property(strong, nonatomic) NSArray* days;
+
 
 @end
 
@@ -65,7 +68,13 @@
     self.url = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&cnt=10&mode=json&appid=5397c1af17fbb5af41946989d2e01642", self.latitude, self.longitude];
 
     [self loadWeatherDataFromUrl];
+    
+    
+    
 }
+
+
+
 
 - (void)UIInit
 {
@@ -105,6 +114,14 @@
 
     NSLog(@"\n\nHeight: %f", height);
     NSLog(@"\n\nMAx Y: %f", CGRectGetMaxY(self.cityLabel.frame));
+    
+    
+    //********* white line **********
+    self.whiteLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.cityLabel.frame) + 17, self.view.frame.size.width, 3)];
+    [self.whiteLine setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:self.whiteLine];
+    
+    
 
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(self.cityLabel.frame) + 20, CONTAINER_WIDTH, 500)];
 
@@ -190,7 +207,7 @@
     
     self.temperatureGraph = [[ScrollGraphUIView alloc] initWithFrame:CGRectMake(0, 10, self.bottomContainerView.frame.size.width, 150)];
     
-    [self.temperatureGraph setTitleLabel:@"15 days weather" color:[UIColor whiteColor] font:[UIFont fontWithName:@"ChalkboardSE-Bold" size:12]];
+    [self.temperatureGraph setTitleLabel:@"10 days weather" color:[UIColor whiteColor] font:[UIFont fontWithName:@"ChalkboardSE-Bold" size:12]];
     
 #ifdef SHOW_BORDER_MACRO
     [self.temperatureGraph.layer setBorderColor:[UIColor blackColor].CGColor];
@@ -204,13 +221,17 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.temperatureGraph.frame), self.scrollView.frame.size.width, 400)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.tableView registerClass:WeatherTableViewCell.self forCellReuseIdentifier:@"cell"];
+    [self.tableView setBackgroundColor:[UIColor clearColor]];
+    self.tableView.scrollEnabled = NO;
     [self.bottomContainerView addSubview:self.tableView];
 #ifdef SHOW_BORDER_MACRO
     [self.tableView.layer setBorderColor:[UIColor blackColor].CGColor];
     [self.tableView.layer setBorderWidth:1.0];    
 #endif
     
-    
+    [self.bottomContainerView sendSubviewToBack:self.tableView];
+    [self.bottomContainerView bringSubviewToFront:self.temperatureGraph];
     
 }
 
@@ -240,17 +261,31 @@
             if (data == nil)
                 return;
             dispatch_async(dispatch_get_main_queue(), ^{
+                
+                
 
                 UIImage* iconImage = [UIImage imageWithData:data];
 
                 [self.iconImageView setImage:iconImage];
 
                 [self.iconImageView setContentMode:UIViewContentModeScaleAspectFill];
-                NSLog(@"Weather: %@", [self.weather getCurrentWeatherDescription]);
+                [self.tableView reloadData];
+                [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width, self.containerView.frame.size.height + 10 + self.temperatureGraph.frame.size.height+ self.tableView.frame.size.height)];
             });
         });
 
         [self.iconDescriptionLabel setText:[self.weather getCurrentWeatherDescription]];
+        
+        self.days = [self generateArrayWithDates:[self.weather getNumOfDays]];
+        
+//        NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+//        [dateFormatter setDateFormat:@"dd.MM"];
+//        
+//        for (NSDate *date in self.days) {
+//            NSLog(@"-*-*-*-%@",[dateFormatter stringFromDate:date]);
+//        }
+//        
+//        NSLog(@"Generated arrat with days: %@", self.days);
 
     }];
 }
@@ -272,6 +307,7 @@
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView
 {
 
+    
     CGFloat offset = scrollView.contentOffset.y;
     CGFloat percentage = offset / TOP_CONTAINER_HEIGHT;
     CGFloat value = TOP_CONTAINER_HEIGHT * percentage;
@@ -279,6 +315,32 @@
     if (TOP_CONTAINER_HEIGHT - value > 60) {
         self.containerView.frame = CGRectMake(0, value, self.scrollView.bounds.size.width, TOP_CONTAINER_HEIGHT - value);
     }
+    
+    NSLog(@"**/nScrollView offset: %f/nTable View scroll offset: %f",TOP_CONTAINER_HEIGHT - value, self.tableView.contentOffset.y);
+    
+    if (TOP_CONTAINER_HEIGHT - value < 10 && TOP_CONTAINER_HEIGHT - value >= 0) {
+        
+        self.temperatureGraph.frame = CGRectMake(self.temperatureGraph.frame.origin.x, 10 + 10 - (TOP_CONTAINER_HEIGHT - value), self.temperatureGraph.frame.size.width, self.temperatureGraph.frame.size.height);
+        NSLog(@"Graph y: %f", 20 - (TOP_CONTAINER_HEIGHT - value));
+    }
+    
+    if (TEMPERATURE_LABEL_HEIGHT - value < -60) {
+        self.temperatureGraph.frame = CGRectMake(self.temperatureGraph.frame.origin.x, 20 - (TOP_CONTAINER_HEIGHT - value), self.temperatureGraph.frame.size.width, self.temperatureGraph.frame.size.height);
+    }
+
+//    if (self.tableView.contentOffset.y < 0) {
+//        self.scrollView.scrollEnabled = YES;
+//        self.tableView.scrollEnabled = NO;
+//    }
+    
+    
+    
+   // NSLog(@"Table View scroll offset: %f",self.tableView.contentOffset.y);
+    
+//    if (TOP_CONTAINER_HEIGHT - value < 150) {
+//        self.scrollView.scrollEnabled = YES;
+//        self.tableView.scrollEnabled = NO;
+//    }
 
     //self.containerView.frame = CGRectMake(0, value, self.scrollView.bounds.size.width, TOP_CONTAINER_HEIGHT - value);
 
@@ -317,18 +379,58 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
     return [self.weather getNumOfDays];
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    //TODO
     WeatherTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell setCellData:<#(NSString *)#> iconURL:<#(NSString *)#> temperature:<#(NSString *)#>
+    DailyData* dailyData = [self.weather getWeatherDescriptions:(int)indexPath.row];
+    [cell setCellData:self.days[indexPath.row] iconURL:[dailyData getIconURL] temperature:[dailyData getTemperature]];
+    return cell;
+    
+    
+}
+
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    
+//    //TODO
+//    WeatherTableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+//    
+//    DailyData* dailyData = [self.weather getWeatherDescriptions:(int)indexPath.row];
+//    
+//    
+//    
+//    [cell setCellData:self.days[indexPath.row] iconURL:[dailyData getIconURL] temperature:[dailyData getTemperature]];
+//    
+//    return cell;
+//    
+//    
+//    
+//}
+
+
+
+-(NSArray*)generateArrayWithDates:(int)numOfDays{
+    
+    NSDate* startDate = [NSDate date];
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    NSDateComponents* offset = [[NSDateComponents alloc] init];
+    NSMutableArray* dates = [NSMutableArray arrayWithObject:startDate];
+    
+    for (int i = 1 ; i  < numOfDays; i++) {
+        [offset setDay:i];
+        NSDate * nextDay = [calendar dateByAddingComponents:offset toDate:startDate options:0];
+        [dates addObject:nextDay];
+    }
+    
+    NSLog(@"%@",dates);
+    return dates;
     
 }
 

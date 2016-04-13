@@ -107,17 +107,10 @@
     return [((DailyData*)self.tenDaysData[0])  getWeatherDescription];
 }
 
-- (NSArray*)getWeatherDescriptions
+- (DailyData*)getWeatherDescriptions:(int)numDaysFromCurrentDate
 {
 
-    NSMutableArray* descriptions = [NSMutableArray new];
-    
-    for (int i = 0;  i < self.tenDaysData.count; i++){
-        
-        [descriptions addObject:[((DailyData*)self.tenDaysData[i]) getWeatherDescription]];
-    }
-    
-    return descriptions;
+    return self.tenDaysData[numDaysFromCurrentDate];
 }
 
 - (NSArray*)getIconURLs

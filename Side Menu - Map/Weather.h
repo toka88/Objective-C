@@ -16,6 +16,7 @@
 //________________________________________________________________________________//
 //********************************************************************************//
 #import <Foundation/Foundation.h>
+#import "DailyData.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 //________________________________________________________________________________//
@@ -41,7 +42,7 @@
 -(NSString*)getCurrentWeatherDescription;
 
 - (NSArray*)getIconURLs;
-- (NSArray*)getWeatherDescriptions;
+- (DailyData*)getWeatherDescriptions:(int)numDaysFromCurrentDate;
 -(NSArray*)getTemperatures;
 
 -(int)getNumOfDays;
